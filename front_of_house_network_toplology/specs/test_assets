@@ -1,0 +1,726 @@
+FAKE_AWS_EC2_DESCRIBE_SUBNETS='{
+    "Subnets": [
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "nat-box-monitor-z1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.113.0/28", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-32c92c6b", 
+            "AvailableIpAddressCount": 10
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "services1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.32.0/20", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-9f7049d9", 
+            "AvailableIpAddressCount": 4091
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "logsearch_az1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.48.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-61a1a527", 
+            "AvailableIpAddressCount": 248
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "bosh1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.0.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-957049d3", 
+            "AvailableIpAddressCount": 245
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "services_rds2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.72.0/21", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-d81408ac", 
+            "AvailableIpAddressCount": 2043
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "bosh3", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.128.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1c", 
+            "SubnetId": "subnet-38fefb10", 
+            "AvailableIpAddressCount": 250
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf_rds1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.3.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-907049d6", 
+            "AvailableIpAddressCount": 249
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "bosh2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.64.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-d8170bac", 
+            "AvailableIpAddressCount": 248
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "bosh_rds2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.65.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-dd1408a9", 
+            "AvailableIpAddressCount": 250
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "diego3", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.116.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1c", 
+            "SubnetId": "subnet-29f3f601", 
+            "AvailableIpAddressCount": 250
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "logsearch_az2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.112.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-0968727d", 
+            "AvailableIpAddressCount": 248
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.80.0/20", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-db170baf", 
+            "AvailableIpAddressCount": 4070
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "bosh_rds1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.1.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-927049d4", 
+            "AvailableIpAddressCount": 250
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf_elb1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.2.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-937049d5", 
+            "AvailableIpAddressCount": 248
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "services2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.96.0/20", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-c4170bb0", 
+            "AvailableIpAddressCount": 4091
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf_rds2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.67.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-df1408ab", 
+            "AvailableIpAddressCount": 249
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "services_rds1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.8.0/21", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-917049d7", 
+            "AvailableIpAddressCount": 2043
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "nat-box-monitor-z2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.113.16/28", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-4efe0539", 
+            "AvailableIpAddressCount": 10
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.16.0/20", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-9e7049d8", 
+            "AvailableIpAddressCount": 4068
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "diego1", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.114.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1a", 
+            "SubnetId": "subnet-9c2cc9c5", 
+            "AvailableIpAddressCount": 244
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "diego2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.115.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-6ade251d", 
+            "AvailableIpAddressCount": 245
+        }, 
+        {
+            "VpcId": "vpc-3d24de58", 
+            "Tags": [
+                {
+                    "Value": "cf_elb2", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlock": "10.10.66.0/24", 
+            "MapPublicIpOnLaunch": false, 
+            "DefaultForAz": false, 
+            "State": "available", 
+            "AvailabilityZone": "us-east-1d", 
+            "SubnetId": "subnet-de1408aa", 
+            "AvailableIpAddressCount": 248
+        }
+    ]
+}'
+
+
+FAKE_AWS_EC2_DESCRIBE_ROUTE_TABLES='{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-937049d5", 
+                    "RouteTableAssociationId": "rtbassoc-69f5320c", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-c832ccad"
+                }
+            ], 
+            "RouteTableId": "rtb-c832ccad", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "cf_elb_1 route table", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b97f90dc", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-61a1a527", 
+                    "RouteTableAssociationId": "rtbassoc-b9fd31dc", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a532ccc0"
+                }, 
+                {
+                    "SubnetId": "subnet-9c2cc9c5", 
+                    "RouteTableAssociationId": "rtbassoc-1fd9757a", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a532ccc0"
+                }, 
+                {
+                    "SubnetId": "subnet-32c92c6b", 
+                    "RouteTableAssociationId": "rtbassoc-f5f45890", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a532ccc0"
+                }, 
+                {
+                    "SubnetId": "subnet-9e7049d8", 
+                    "RouteTableAssociationId": "rtbassoc-77f53212", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a532ccc0"
+                }, 
+                {
+                    "SubnetId": "subnet-9f7049d9", 
+                    "RouteTableAssociationId": "rtbassoc-153ef370", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a532ccc0"
+                }
+            ], 
+            "RouteTableId": "rtb-a532ccc0", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "RT-NAT-Z1", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "InstanceId": "i-c3ced393", 
+                    "NetworkInterfaceId": "eni-6cac1135", 
+                    "State": "active", 
+                    "InstanceOwnerId": "486973897842"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-0968727d", 
+                    "RouteTableAssociationId": "rtbassoc-85fd31e0", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ae30cecb"
+                }, 
+                {
+                    "SubnetId": "subnet-c4170bb0", 
+                    "RouteTableAssociationId": "rtbassoc-f9f3349c", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ae30cecb"
+                }, 
+                {
+                    "SubnetId": "subnet-db170baf", 
+                    "RouteTableAssociationId": "rtbassoc-e7fe4082", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ae30cecb"
+                }, 
+                {
+                    "SubnetId": "subnet-4efe0539", 
+                    "RouteTableAssociationId": "rtbassoc-18f4587d", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ae30cecb"
+                }, 
+                {
+                    "SubnetId": "subnet-6ade251d", 
+                    "RouteTableAssociationId": "rtbassoc-75db7710", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ae30cecb"
+                }
+            ], 
+            "RouteTableId": "rtb-ae30cecb", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "RT-NAT-Z2", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "InstanceId": "i-f538c8a5", 
+                    "NetworkInterfaceId": "eni-c12244b6", 
+                    "State": "active", 
+                    "InstanceOwnerId": "486973897842"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-29f3f601", 
+                    "RouteTableAssociationId": "rtbassoc-10d57975", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-3912ca5c"
+                }
+            ], 
+            "RouteTableId": "rtb-3912ca5c", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "RT-NAT-Z3", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "InstanceId": "i-e3a6c9cf", 
+                    "NetworkInterfaceId": "eni-d1aae3fa", 
+                    "State": "active", 
+                    "InstanceOwnerId": "486973897842"
+                }
+            ]
+        }, 
+        {
+            "Associations": [], 
+            "RouteTableId": "rtb-ec32cc89", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "original main route table", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b97f90dc", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-de1408aa", 
+                    "RouteTableAssociationId": "rtbassoc-7ef5321b", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-ad32ccc8"
+                }
+            ], 
+            "RouteTableId": "rtb-ad32ccc8", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "cf_elb2 route table", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b97f90dc", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-d8170bac", 
+                    "RouteTableAssociationId": "rtbassoc-25ed5340", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-a730cec2"
+                }
+            ], 
+            "RouteTableId": "rtb-a730cec2", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "legacy_bosh2_route_table", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b97f90dc", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "RouteTableAssociationId": "rtbassoc-fefe409b", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-f175dd94"
+                }
+            ], 
+            "RouteTableId": "rtb-f175dd94", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "fallback-route-table-through-nats", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "InstanceId": "i-c3ced393", 
+                    "NetworkInterfaceId": "eni-6cac1135", 
+                    "State": "active", 
+                    "InstanceOwnerId": "486973897842"
+                }
+            ]
+        }, 
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-957049d3", 
+                    "RouteTableAssociationId": "rtbassoc-59ed533c", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-c232cca7"
+                }, 
+                {
+                    "SubnetId": "subnet-38fefb10", 
+                    "RouteTableAssociationId": "rtbassoc-24ed5341", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-c232cca7"
+                }
+            ], 
+            "RouteTableId": "rtb-c232cca7", 
+            "VpcId": "vpc-3d24de58", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "legacy_bosh1_route_table", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.10.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-b97f90dc", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ]
+        }
+    ]
+}'
+
+FAKE_AWS_EC2_DESCRIBE_VPCS='{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-3d24de58", 
+            "InstanceTenancy": "default", 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-15bda977", 
+            "CidrBlock": "10.10.0.0/16", 
+            "IsDefault": false
+        }
+    ]
+}'

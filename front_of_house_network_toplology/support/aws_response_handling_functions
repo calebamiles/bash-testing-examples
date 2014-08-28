@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#### FETCH SUBNET INFORMATION
+function get_aws_subnets {
+  aws ec2 describe-subnets
+}
+
+# First argument is function which returns a parsable response in the format returned by `aws ec2 describe-subnets`
+function extract_subnet_id {
+  $1 | jq --arg name $2 '.Subnets|map(select(.Tags[].Value == $name))'| grep SubnetId | cut -d':' -f2 | tr -d ', "'
+}
+
+# $1: function to fetch aws response
+# $2: subnet name to find id for
+function get_aws_subnet_id {
+  extract_subnet_id get_aws_subnets $1
+}
+
+#### FETCH ROUTE TABLE INFORMATION
+function get_aws_route_tables {
+  aws ec2 describe-route-tables
+}
+
+function extract_route_table_id {
+  $1 | jq --arg subnet $2 '.RouteTables|.[].Associations|map(select(contains({"SubnetId": $subnet})))'| grep RouteTableAssociationId | cut -d':' -f2 | tr -d ', "'
+}
+
+# $1: function to fetch aws response
+# $2: subnet id to find assocation for
+function get_aws_route_table_id {
+  extract_route_table_id get_aws_route_tables $1
+}
+
+#### FETCH VPC INFORMATION
+function get_aws_vpcs {
+  aws ec2 describe-vpcs
+}
+
+
+function extract_vpc_id_from_subnet {
+  $1 | jq --arg subnet_id $2 '.Subnets|map(select(.SubnetId == $subnet_id))' | grep VpcId | cut -d':' -f2 | tr -d ', "'
+}
+
+# $1: function to fetch aws response
+# $2: subnet id to find vpc id for
+function get_aws_vpc_id_from_subnet {
+  extract_vpc_id_from_subnet get_aws_subnets $1
+}
+
+function extract_vpc_cidr {
+  $1 | jq --arg vpc_id $2 '.Vpcs|map(select(.VpcId == $vpc_id))' | grep CidrBlock | cut -d':' -f2 | tr -d ', "'
+}
+
+function get_aws_vpc_cidr {
+  extract_vpc_cidr get_aws_vpcs $1
+}
+

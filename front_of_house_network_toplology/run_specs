@@ -1,0 +1,50 @@
+#!/usr/bin/expect
+
+log_user 0
+
+set script "./specs/test_subnet_id.sh"
+set expectation "subnet-957049d3"
+spawn $script
+expect {
+  $expectation {send_user .}
+  timeout {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+  eof {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+}
+unset script
+unset expectation
+
+set script "./specs/test_route_table_id.sh"
+set expectation "rtbassoc-59ed533c"
+spawn $script
+expect {
+  $expectation {send_user .}
+  timeout {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+  eof {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+}
+unset script
+unset expectation
+
+set script "./specs/test_vpc_id.sh"
+set expectation "vpc-3d24de58"
+spawn $script
+expect {
+  $expectation {send_user .}
+  timeout {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+  eof {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+}
+unset script
+unset expectation
+
+set script "./specs/test_vpc_cidr.sh"
+set expectation "10.10.0.0/16"
+spawn $script
+expect {
+  $expectation {send_user .}
+  timeout {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+  eof {puts F; puts "error executing $script, recieved $expect_out(buffer) instead of $expectation"; exit 1}
+}
+unset script
+unset expectation
+
+puts ""
+puts "ALL TESTS PASSED!"
